@@ -6,10 +6,21 @@
     <title>Name</title>
     <link rel = "stylesheet" href = "style.css">
     <link href='https://fonts.googleapis.com/css?family=Gaegu' rel='stylesheet'>
+    <body style="background-color:antiquewhite;"></body>
   </head>
   <div class = header>
-    <h1>Title</h1>
+    <h1 style="text-align:center;">Choose Your Next Movie!</h1>
   </div>
 <body>
-  <p>hello this is out website!</p>
+  <p>Enter a genre, time period, and country!</p>
+  <form action="/submit_form" method="post">
+    <input type="text" name="genrein" id="genreIn" placeholder="Genre">
+    <p></p>
+    <input type="number" name="timein" id="timeIn" min="1900" max="2024" step="1" placeholder="Year">
+    <p></p>
+    <input type="text" name="countryin" id="countryIn" placeholder="Country">
+    <p></p>
+    <input type="submit" value="Submit">
+  </form>
+  
 </body>
